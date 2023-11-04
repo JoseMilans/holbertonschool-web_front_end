@@ -1,5 +1,5 @@
 /* customized smooth scrolling and colour styling with CSS variables */
-:root {
+:root{
     /* custom properties */
     --color-primary: #d73953;
     --color-black: #090909;
@@ -13,16 +13,16 @@ html{
     scroll-behavior: smooth;
 }
 /* text colour configuration using CSS variables */
-body, a {
+body, a{
     color: var(--text-color); /* sets text colour for body and links */
 }
 
 /* accessibility */
-.visually-hidden {
+.visually-hidden{
     display: none; /* hides elements for screen readers */
 }
 
 /* accent colour application for specific categories and sections */
-.card-category, .section-tagline {
+.card-category, .section-tagline{
     color: var(--color-primary); /* applies a distinct colour for emphasis */
 }
