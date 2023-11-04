@@ -1,0 +1,28 @@
+/* customized smooth scrolling and colour styling with CSS variables */
+:root {
+    /* custom properties */
+    --color-primary: #d73953;
+    --color-black: #090909;
+    --color-white: #ffffff;
+    --color-light-grey: #f3f3f3;
+    --color-dark-grey: #353535;
+    --text-color: var(--color-black);
+}
+html{
+	/* ensures smooth scrolling throughout the document */
+    scroll-behavior: smooth;
+}
+/* text colour configuration using CSS variables */
+body, a {
+    color: var(--text-color); /* sets text colour for body and links */
+}
+
+/* accessibility */
+.visually-hidden {
+    display: none; /* hides elements for screen readers */
+}
+
+/* accent colour application for specific categories and sections */
+.card-category, .section-tagline {
+    color: var(--color-primary); /* applies a distinct colour for emphasis */
+}
