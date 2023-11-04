@@ -1,0 +1,19 @@
+/* customized smooth scrolling and color styling */
+html{
+	/* ensures smooth scrolling throughout the document */
+    scroll-behavior: smooth;
+}
+/* text color configuration */
+body, a {
+    color: #161616; /* sets text color for body and links */
+}
+
+/* accessibility */
+.visually-hidden {
+    display: none; /* hides elements for screen readers */
+}
+
+/* accent color application for specific categories and sections */
+.card-category, .section-tagline {
+    color: #D73953; /* applies a distinct color for emphasis */
+}
