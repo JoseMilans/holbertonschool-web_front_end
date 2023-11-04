@@ -1,0 +1,57 @@
+/* customized smooth scrolling and colour styling with CSS variables */
+html{
+    /* setting base font size for scaling */
+	font-size: 62.5%;
+    scroll-behavior: smooth; /* ensures smooth scrolling throughout the document */
+}
+
+/* defining root custom properties for colours, fonts and font sizes */
+:root{
+    /* colour variables */
+    --color-primary: #d73953;
+    --color-black: #090909;
+    --color-white: #ffffff;
+    --color-light-grey: #f3f3f3;
+    --color-dark-grey: #353535;
+    --text-color: var(--color-black);
+    --font-family-base: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    --font-family-title: 'Raleway', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    --font-size-small: 1.2rem;
+    --font-size-medium: 1.6rem;
+    --font-size-large: 1.8rem;
+    --font-size-x-large: 2.3rem;
+    --font-size-xx-large: 4.8rem;
+    --font-weight-regular: 400;
+    --font-weight-bold: 700;
+}
+
+/* applying base font family and text colour configuration using CSS variables */
+body{
+    color: var(--text-color); /* sets text colour for body*/
+    /* sets base font family */
+    font-family: var(--font-family-base);
+    /* sets default font size for body text */
+    font-size: var(--font-size-medium);
+    font-weight: var(--font-weight-regular); /* sets boldness of fonts */
+}
+
+/* sets text colour for anchor elements*/
+a{
+    color: var(--text-color);
+}
+
+/* accessibility */
+.visually-hidden{
+    display: none; /* hides elements for screen readers */
+}
+
+/* accent colour application for specific categories and sections */
+.card-category, .section-tagline{
+    color: var(--color-primary); /* applies a distinct colour for emphasis */
+}
+
+/* title font for all heading elements */
+h1, h2, h3, h4, h5, h6{
+    font-family: var(--font-family-title);
+    font-weight: var(--font-weight-bold);
+}
