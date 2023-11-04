@@ -1,0 +1,45 @@
+/* customized smooth scrolling and colour styling with CSS variables */
+html{
+	/* ensures smooth scrolling throughout the document */
+    scroll-behavior: smooth;
+}
+
+/* defining root custom properties for colours and fonts */
+:root{
+    /* custom properties */
+    --color-primary: #d73953;
+    --color-black: #090909;
+    --color-white: #ffffff;
+    --color-light-grey: #f3f3f3;
+    --color-dark-grey: #353535;
+    --text-color: var(--color-black);
+    --font-family-base: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    --font-family-title: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+/* applying base font family and text colour configuration using CSS variables */
+body{
+    color: var(--text-color); /* sets text colour for body*/
+    /* sets base font family */
+    font-family: var(--font-family-base);
+}
+
+/* sets text colour for anchor elements*/
+a{
+    color: var(--text-color);
+}
+
+/* accessibility */
+.visually-hidden{
+    display: none; /* hides elements for screen readers */
+}
+
+/* accent colour application for specific categories and sections */
+.card-category, .section-tagline{
+    color: var(--color-primary); /* applies a distinct colour for emphasis */
+}
+
+/* title font for all heading elements */
+h1, h2, h3, h4, h5, h6{
+    font-family: var(--font-family-title);
+}
