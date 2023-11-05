@@ -174,7 +174,7 @@ h1, h2, h3, h4, h5, h6{
 /* styling for nav-link */
 .nav .nav-link{
     display: block;
-    padding: calc(var(--font-size-medium) / 2) var(--font-size-medium); /* 0.5rem (5px) and 1rem (10px) */
+    padding: 0.5rem 1rem;
 }
 
 /* hover effect for nav-link */
